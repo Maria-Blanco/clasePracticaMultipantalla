@@ -1,0 +1,174 @@
+/*GENERALES*/
+
+ul {
+        width:100%;
+        margin: 0;
+        padding: 15px;
+        list-style: none;
+}
+a {
+        text-decoration: none;
+        color: black;
+}
+body {
+        background-color: whitesmoke;
+}
+main{
+        padding: 20px;
+        text-align: center;
+        justify-content: center;
+}
+
+/*TOGGLE Y BARRA*/
+header >ul {
+                display: inline-flex;
+                justify-content: space-around;
+                background-color: lavender;
+}
+header >ul > li >a {
+                        font-size: large;
+}
+header >ul > li >a:hover {
+                            font-size: larger;
+                            font-weight: bold;
+                            color: indigo;
+}
+button {
+            margin-left: 47%;
+            margin-right: 47%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-color: indigo;
+            background-color: lavender;
+            border-radius: 10px;
+}
+button:hover {
+                border-color: lavender;
+                background-color: indigo;
+                color: lavender;
+                font-size: large;
+                font-weight: bold;
+
+}
+
+/*SLIDER*/
+#slider {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-top: 20px;
+}
+#slider >img {
+                height: 550px;
+}
+
+/*TARJETAS iNDICE*/
+#indice {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            margin-top: 20px;
+            margin-bottom: 20px;
+}
+#indice >a {
+            text-align: center;
+            background-color: lavender;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            width: 15%;
+            height: fit-content;
+}
+#indice >a:hover {
+                    color: indigo;
+                    border: 2px solid indigo;
+}
+#indice >a >p {
+                    width: 90%;
+                    padding-left: 5%;
+                    text-align: left;
+}
+#indice >a >img {
+                    width: 90%;
+}
+
+/*DETALLES*/
+main >article >ul >li >img {
+                                margin-bottom: 10px;
+                                width: 100%;
+}
+main >article >ul {
+                width: 30%;
+                margin-left: 35%;
+}
+main >article >ul >li {
+                        margin-bottom: 30px;
+                        background-color: ivory;
+                        padding: 15px;
+                        box-shadow: 5px 7px 10px black;
+}
+
+/*FOOTER*/
+footer {
+            background-color: lavender;
+            display: inline-flex;
+            width: 100%;
+            font-weight: bold;
+            font-style: italic;
+}
+footer >ul >li {
+                    margin-bottom: 10px;
+}
+iframe{
+        margin-top: 10px;
+}
+
+/*MEDIA*/
+@media only screen and (max-width: 1500px){
+    button {
+                display: none;
+    }
+}
+
+@media only screen and (max-width: 760px){
+    header >ul {
+                    display: flex;
+                    flex-direction: column;
+    }
+    button{
+            display: block;
+    }
+    #indice >a >p {
+                    display: none;
+    }
+    main >article >ul >li >img {
+                                display: none;
+    }
+    footer{
+        display: flex;
+        flex-direction: column; 
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #slider{
+                display: none;
+    }
+    #indice >a >h4 {
+                        font-size: large;
+    }
+    main >article >h2 {
+                        font-size: x-large;
+    }
+    main >article >p {
+                        display: none;
+    }
+    iframe{
+            display: none;
+    }
+    footer >ul {
+                    padding: 0px;
+    }
+    footer {
+                padding: 15px;
+    }
+}
